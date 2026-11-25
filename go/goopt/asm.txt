@@ -1,0 +1,197 @@
+goopt.SecondsPerWeek STEXT nosplit size=6 args=0x0 locals=0x0 funcid=0x0 align=0x0
+3: TEXT	goopt.SecondsPerWeek(SB), NOSPLIT|NOFRAME|ABIInternal, $0-0
+6: MOVL	$604800, AX
+6: RET
+goopt.square STEXT nosplit size=5 args=0x8 locals=0x0 funcid=0x0 align=0x0
+9: TEXT	goopt.square(SB), NOSPLIT|NOFRAME|ABIInternal, $0-8
+9: IMULQ	AX, AX
+9: RET
+goopt.SumSquares STEXT nosplit size=13 args=0x10 locals=0x0 funcid=0x0 align=0x0
+11: TEXT	goopt.SumSquares(SB), NOSPLIT|NOFRAME|ABIInternal, $0-16
+11: XCHGL	AX, AX
+9: IMULQ	AX, AX
+9: IMULQ	BX, BX
+11: ADDQ	BX, AX
+	0x000c 00012 (<unknown line number>)	NOP
+	0x000c 00012 (<unknown line number>)	NOP
+11: RET
+goopt.Div10 STEXT nosplit size=16 args=0x8 locals=0x0 funcid=0x0 align=0x0
+13: TEXT	goopt.Div10(SB), NOSPLIT|NOFRAME|ABIInternal, $0-8
+13: MOVL	AX, AX
+13: MOVL	$3435973837, CX
+13: IMULQ	CX, AX
+13: SHRQ	$35, AX
+13: RET
+goopt.Hash STEXT nosplit size=40 args=0x18 locals=0x0 funcid=0x0 align=0x0
+15: TEXT	goopt.Hash(SB), NOSPLIT|NOFRAME|ABIInternal, $0-24
+15: MOVQ	AX, goopt.s+8(FP)
+17: XORL	CX, CX
+17: XORL	DX, DX
+17: JMP	32
+17: MOVBLZX	(AX)(CX*1), SI
+18: MOVL	DX, DI
+18: SHLL	$5, DX
+18: SUBL	DI, DX
+17: INCQ	CX
+18: ADDL	SI, DX
+18: NOP
+17: CMPQ	BX, CX
+17: JGT	11
+20: MOVL	DX, AX
+20: RET
+goopt.Add STEXT nosplit size=86 args=0x48 locals=0x18 funcid=0x0 align=0x0
+23: TEXT	goopt.Add(SB), NOSPLIT|ABIInternal, $24-72
+23: PUSHQ	BP
+23: MOVQ	SP, BP
+23: SUBQ	$16, SP
+23: MOVQ	AX, goopt.dst+32(FP)
+23: MOVQ	DI, goopt.a+56(FP)
+23: MOVQ	R9, goopt.b+80(FP)
+24: XORL	CX, CX
+24: JMP	37
+25: ADDL	(R9)(CX*4), DX
+25: MOVL	DX, (AX)(CX*4)
+24: INCQ	CX
+24: CMPQ	BX, CX
+24: JLE	57
+25: CMPQ	SI, CX
+25: JLS	74
+25: MOVL	(DI)(CX*4), DX
+25: CMPQ	R10, CX
+25: JHI	27
+25: JMP	63
+27: ADDQ	$16, SP
+27: POPQ	BP
+27: RET
+25: MOVQ	CX, AX
+25: MOVQ	R10, CX
+25: CALL	runtime.panicIndex(SB)
+25: MOVQ	CX, AX
+25: MOVQ	SI, CX
+25: CALL	runtime.panicIndex(SB)
+25: XCHGL	AX, AX
+goopt.AddBCE STEXT nosplit size=88 args=0x48 locals=0x18 funcid=0x0 align=0x0
+29: TEXT	goopt.AddBCE(SB), NOSPLIT|ABIInternal, $24-72
+29: PUSHQ	BP
+29: MOVQ	SP, BP
+29: SUBQ	$16, SP
+29: MOVQ	AX, goopt.dst+32(FP)
+29: MOVQ	DI, goopt.a+56(FP)
+29: MOVQ	R9, goopt.b+80(FP)
+30: CMPQ	BX, R8
+30: JHI	76
+30: NOP
+31: CMPQ	BX, R11
+31: JHI	65
+31: XORL	CX, CX
+32: JMP	54
+33: MOVL	(DI)(CX*4), DX
+33: ADDL	(R9)(CX*4), DX
+33: MOVL	DX, (AX)(CX*4)
+32: INCQ	CX
+32: CMPQ	BX, CX
+32: JGT	41
+35: ADDQ	$16, SP
+35: POPQ	BP
+35: RET
+31: MOVQ	BX, CX
+31: MOVQ	R11, DX
+31: CALL	runtime.panicSliceAcap(SB)
+30: MOVQ	BX, CX
+30: MOVQ	R8, DX
+30: CALL	runtime.panicSliceAcap(SB)
+30: XCHGL	AX, AX
+goopt.SumTo STEXT nosplit size=23 args=0x8 locals=0x0 funcid=0x0 align=0x0
+37: TEXT	goopt.SumTo(SB), NOSPLIT|NOFRAME|ABIInternal, $0-8
+39: MOVL	$1, CX
+39: XORL	DX, DX
+39: JMP	16
+39: LEAL	1(CX), BX
+40: ADDL	CX, DX
+39: MOVL	BX, CX
+39: CMPL	AX, CX
+39: JCC	9
+42: MOVL	DX, AX
+42: RET
+goopt.Fact STEXT size=81 args=0x10 locals=0x18 funcid=0x0 align=0x0
+45: TEXT	goopt.Fact(SB), ABIInternal, $24-16
+45: CMPQ	SP, 16(R14)
+45: JLS	51
+45: PUSHQ	BP
+45: MOVQ	SP, BP
+45: SUBQ	$16, SP
+46: CMPQ	AX, $1
+46: JHI	29
+47: MOVQ	BX, AX
+47: ADDQ	$16, SP
+47: POPQ	BP
+47: RET
+49: LEAQ	-1(AX), CX
+49: IMULQ	AX, BX
+49: MOVQ	CX, AX
+49: CALL	goopt.Fact(SB)
+49: ADDQ	$16, SP
+49: POPQ	BP
+49: RET
+49: NOP
+45: MOVQ	AX, 8(SP)
+45: MOVQ	BX, 16(SP)
+45: NOP
+45: CALL	runtime.morestack_noctxt(SB)
+45: MOVQ	8(SP), AX
+45: MOVQ	16(SP), BX
+45: JMP	0
+goopt.NewPointStack STEXT nosplit size=6 args=0x0 locals=0x0 funcid=0x0 align=0x0
+54: TEXT	goopt.NewPointStack(SB), NOSPLIT|NOFRAME|ABIInternal, $0-0
+56: MOVL	$3, AX
+56: RET
+goopt.NewPointHeap STEXT size=54 args=0x0 locals=0x18 funcid=0x0 align=0x0
+59: TEXT	goopt.NewPointHeap(SB), ABIInternal, $24-0
+59: CMPQ	SP, 16(R14)
+59: JLS	47
+59: PUSHQ	BP
+59: MOVQ	SP, BP
+59: SUBQ	$16, SP
+60: LEAQ	type:goopt.Point(SB), AX
+60: CALL	runtime.newobject(SB)
+60: MOVQ	$1, (AX)
+60: MOVQ	$2, 8(AX)
+60: ADDQ	$16, SP
+60: POPQ	BP
+60: RET
+60: NOP
+59: CALL	runtime.morestack_noctxt(SB)
+59: JMP	0
+go:cuinfo.producer.goopt SDWARFCUINFO dupok size=0
+go:cuinfo.packagename.goopt SDWARFCUINFO dupok size=0
+go:info.goopt.square$abstract SDWARFABSFCN dupok size=26
+runtime.memequal128·f SRODATA dupok size=8
+runtime.memequal64·f SRODATA dupok size=8
+runtime.gcbits.0100000000000000 SRODATA dupok size=8
+type:.namedata.*goopt.Point. SRODATA dupok size=14
+type:*goopt.Point SRODATA size=56
+runtime.gcbits. SRODATA dupok size=0
+type:.namedata.X. SRODATA dupok size=3
+type:.namedata.Y. SRODATA dupok size=3
+type:.importpath.goopt. SRODATA dupok size=7
+type:goopt.Point SRODATA size=144
+gclocals·g2BeySu+wFnoycgXfElmcg== SRODATA dupok size=8
+goopt.square.arginfo1 SRODATA static dupok size=3
+goopt.square.argliveinfo SRODATA static dupok size=2
+goopt.SumSquares.arginfo1 SRODATA static dupok size=5
+goopt.SumSquares.argliveinfo SRODATA static dupok size=2
+goopt.Div10.arginfo1 SRODATA static dupok size=3
+goopt.Div10.argliveinfo SRODATA static dupok size=2
+gclocals·wgcWObbY2HYnK2SU/U22lA== SRODATA dupok size=10
+gclocals·J5F+7Qw7O7ve2QcWC7DpeQ== SRODATA dupok size=8
+goopt.Hash.arginfo1 SRODATA static dupok size=9
+goopt.Hash.argliveinfo SRODATA static dupok size=2
+gclocals·/8MICoxHs1oYPVyszo6d+g== SRODATA dupok size=10
+goopt.Add.arginfo1 SRODATA static dupok size=25
+goopt.Add.argliveinfo SRODATA static dupok size=3
+goopt.AddBCE.arginfo1 SRODATA static dupok size=25
+goopt.AddBCE.argliveinfo SRODATA static dupok size=3
+goopt.SumTo.arginfo1 SRODATA static dupok size=3
+goopt.SumTo.argliveinfo SRODATA static dupok size=2
+goopt.Fact.arginfo1 SRODATA static dupok size=5
+goopt.Fact.argliveinfo SRODATA static dupok size=2

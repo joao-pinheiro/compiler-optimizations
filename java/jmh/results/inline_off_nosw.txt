@@ -1,0 +1,129 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.5.1, OpenJDK 64-Bit Server VM, 25.0.5.1+2-1-26.04.1-Ubuntu
+# VM invoker: /usr/lib/jvm/java-25-openjdk-amd64/bin/java
+# VM options: -XX:CompileCommand=dontinline,jopt.InlineBench::square -XX:-UseSuperWord
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jopt.InlineBench.sumSquares
+
+# Run progress: 0,00% complete, ETA 00:00:50
+# Fork: 1 of 5
+CompileCommand: dontinline jopt/InlineBench.square bool dontinline = true
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1381,081 ns/op
+# Warmup Iteration   2: 1482,710 ns/op
+# Warmup Iteration   3: 1530,345 ns/op
+# Warmup Iteration   4: 1511,555 ns/op
+# Warmup Iteration   5: 1531,180 ns/op
+Iteration   1: 1501,578 ns/op
+Iteration   2: 1513,108 ns/op
+Iteration   3: 1493,229 ns/op
+Iteration   4: 1512,276 ns/op
+Iteration   5: 1489,165 ns/op
+
+# Run progress: 20,00% complete, ETA 00:00:41
+# Fork: 2 of 5
+CompileCommand: dontinline jopt/InlineBench.square bool dontinline = true
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1346,503 ns/op
+# Warmup Iteration   2: 1477,364 ns/op
+# Warmup Iteration   3: 1491,604 ns/op
+# Warmup Iteration   4: 1517,516 ns/op
+# Warmup Iteration   5: 1500,489 ns/op
+Iteration   1: 1508,610 ns/op
+Iteration   2: 1506,535 ns/op
+Iteration   3: 1502,593 ns/op
+Iteration   4: 1463,946 ns/op
+Iteration   5: 1480,200 ns/op
+
+# Run progress: 40,00% complete, ETA 00:00:30
+# Fork: 3 of 5
+CompileCommand: dontinline jopt/InlineBench.square bool dontinline = true
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1328,975 ns/op
+# Warmup Iteration   2: 1504,719 ns/op
+# Warmup Iteration   3: 1509,889 ns/op
+# Warmup Iteration   4: 1483,105 ns/op
+# Warmup Iteration   5: 1502,907 ns/op
+Iteration   1: 1494,389 ns/op
+Iteration   2: 1492,575 ns/op
+Iteration   3: 1491,785 ns/op
+Iteration   4: 1485,112 ns/op
+Iteration   5: 1485,283 ns/op
+
+# Run progress: 60,00% complete, ETA 00:00:20
+# Fork: 4 of 5
+CompileCommand: dontinline jopt/InlineBench.square bool dontinline = true
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1352,183 ns/op
+# Warmup Iteration   2: 1474,105 ns/op
+# Warmup Iteration   3: 1494,185 ns/op
+# Warmup Iteration   4: 1482,452 ns/op
+# Warmup Iteration   5: 1507,391 ns/op
+Iteration   1: 1466,606 ns/op
+Iteration   2: 1492,428 ns/op
+Iteration   3: 1469,351 ns/op
+Iteration   4: 1479,626 ns/op
+Iteration   5: 1506,641 ns/op
+
+# Run progress: 80,00% complete, ETA 00:00:10
+# Fork: 5 of 5
+CompileCommand: dontinline jopt/InlineBench.square bool dontinline = true
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1340,847 ns/op
+# Warmup Iteration   2: 1478,348 ns/op
+# Warmup Iteration   3: 1489,142 ns/op
+# Warmup Iteration   4: 1511,316 ns/op
+# Warmup Iteration   5: 1508,784 ns/op
+Iteration   1: 1471,881 ns/op
+Iteration   2: 1500,044 ns/op
+Iteration   3: 1495,813 ns/op
+Iteration   4: 1468,797 ns/op
+Iteration   5: 1488,834 ns/op
+
+
+Result "jopt.InlineBench.sumSquares":
+  1490,416 ±(99.9%) 10,895 ns/op [Average]
+  (min, avg, max) = (1463,946, 1490,416, 1513,108), stdev = 14,545
+  CI (99.9%): [1479,521, 1501,312] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:00:51
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark               Mode  Cnt     Score    Error  Units
+InlineBench.sumSquares  avgt   25  1490,416 ± 10,895  ns/op

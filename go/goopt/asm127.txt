@@ -1,0 +1,286 @@
+goopt.WaitReady STEXT nosplit size=10 align=0x0 args=0x0 locals=0x0 funcid=0x0
+5: TEXT	goopt.WaitReady(SB), NOSPLIT|NOFRAME|ABIInternal, $0-0
+6: CMPB	goopt.ready(SB), $0
+6: JEQ	0
+8: RET
+goopt.Delay STEXT nosplit size=16 align=0x0 args=0x0 locals=0x0 funcid=0x0
+10: TEXT	goopt.Delay(SB), NOSPLIT|NOFRAME|ABIInternal, $0-0
+11: XORL	AX, AX
+11: JMP	7
+11: INCQ	AX
+11: CMPQ	AX, $1000000
+11: JLT	4
+13: RET
+goopt.readPassword STEXT size=98 align=0x0 args=0x18 locals=0x20 funcid=0x0
+16: TEXT	goopt.readPassword(SB), ABIInternal, $32-24
+16: CMPQ	SP, 16(R14)
+16: JLS	61
+16: PUSHQ	BP
+16: MOVQ	SP, BP
+16: SUBQ	$24, SP
+16: MOVQ	AX, goopt.pw+40(FP)
+17: CMPQ	BX, $7
+17: MOVL	$7, DX
+17: CMOVQGT	DX, BX
+17: LEAQ	go:string."hunter2"(SB), DX
+17: CMPQ	AX, DX
+17: JEQ	55
+17: MOVQ	BX, CX
+17: MOVQ	DX, BX
+17: CALL	runtime.memmove(SB)
+18: ADDQ	$24, SP
+18: POPQ	BP
+18: RET
+18: NOP
+16: MOVQ	AX, 8(SP)
+16: MOVQ	BX, 16(SP)
+16: MOVQ	CX, 24(SP)
+16: CALL	runtime.morestack_noctxt(SB)
+16: MOVQ	8(SP), AX
+16: MOVQ	16(SP), BX
+16: MOVQ	24(SP), CX
+16: JMP	0
+goopt.check STEXT nosplit size=50 align=0x0 args=0x18 locals=0x8 funcid=0x0
+21: TEXT	goopt.check(SB), NOSPLIT|ABIInternal, $8-24
+21: PUSHQ	BP
+21: MOVQ	SP, BP
+21: MOVQ	AX, goopt.pw+16(FP)
+22: CMPQ	CX, $7
+22: JCS	44
+22: CMPL	(AX), $1953396072
+22: JNE	40
+22: CMPW	4(AX), $29285
+22: JNE	40
+22: CMPB	6(AX), $50
+22: SETEQ	AL
+22: JMP	42
+22: XORL	AX, AX
+22: POPQ	BP
+22: RET
+22: CALL	runtime.panicBounds(SB)
+22: XCHGL	AX, AX
+goopt.Login STEXT size=106 align=0x0 args=0x0 locals=0x60 funcid=0x0
+25: TEXT	goopt.Login(SB), ABIInternal, $96-0
+25: CMPQ	SP, 16(R14)
+25: JLS	99
+25: PUSHQ	BP
+25: MOVQ	SP, BP
+25: SUBQ	$88, SP
+26: LEAQ	goopt.pw+24(SP), AX
+26: MOVUPS	X15, (AX)
+26: MOVUPS	X15, 16(AX)
+26: MOVUPS	X15, 32(AX)
+26: MOVUPS	X15, 48(AX)
+27: MOVL	$64, BX
+27: MOVL	BX, CX
+27: CALL	goopt.readPassword(SB)
+28: LEAQ	goopt.pw+24(SP), AX
+28: MOVL	$64, BX
+28: MOVL	BX, CX
+28: NOP
+28: CALL	goopt.check(SB)
+29: LEAQ	goopt.pw+24(SP), DX
+29: MOVUPS	X15, (DX)
+29: MOVUPS	X15, 16(DX)
+29: MOVUPS	X15, 32(DX)
+29: MOVUPS	X15, 48(DX)
+30: ADDQ	$88, SP
+30: POPQ	BP
+30: RET
+30: NOP
+25: CALL	runtime.morestack_noctxt(SB)
+25: JMP	0
+goopt.SecondsPerWeek STEXT nosplit size=6 align=0x0 args=0x0 locals=0x0 funcid=0x0
+3: TEXT	goopt.SecondsPerWeek(SB), NOSPLIT|NOFRAME|ABIInternal, $0-0
+6: MOVL	$604800, AX
+6: RET
+goopt.square STEXT nosplit size=5 align=0x0 args=0x8 locals=0x0 funcid=0x0
+9: TEXT	goopt.square(SB), NOSPLIT|NOFRAME|ABIInternal, $0-8
+9: IMULQ	AX, AX
+9: RET
+goopt.SumSquares STEXT nosplit size=13 align=0x0 args=0x10 locals=0x0 funcid=0x0
+11: TEXT	goopt.SumSquares(SB), NOSPLIT|NOFRAME|ABIInternal, $0-16
+11: XCHGL	AX, AX
+9: IMULQ	AX, AX
+9: IMULQ	BX, BX
+11: ADDQ	BX, AX
+	0x000c 00012 (<unknown line number>)	NOP
+	0x000c 00012 (<unknown line number>)	NOP
+11: RET
+goopt.Div10 STEXT nosplit size=16 align=0x0 args=0x8 locals=0x0 funcid=0x0
+13: TEXT	goopt.Div10(SB), NOSPLIT|NOFRAME|ABIInternal, $0-8
+13: MOVL	AX, AX
+13: MOVL	$3435973837, CX
+13: IMULQ	CX, AX
+13: SHRQ	$35, AX
+13: RET
+goopt.Hash STEXT nosplit size=40 align=0x0 args=0x18 locals=0x0 funcid=0x0
+15: TEXT	goopt.Hash(SB), NOSPLIT|NOFRAME|ABIInternal, $0-24
+15: MOVQ	AX, goopt.s+8(FP)
+17: XORL	CX, CX
+17: XORL	DX, DX
+17: JMP	32
+17: MOVBLZX	(AX)(DX*1), SI
+18: MOVL	CX, DI
+18: SHLL	$5, CX
+18: SUBL	DI, CX
+18: ADDL	SI, CX
+17: INCQ	DX
+17: NOP
+17: CMPQ	BX, DX
+17: JGT	11
+20: MOVL	CX, AX
+20: RET
+goopt.Add STEXT nosplit size=70 align=0x0 args=0x48 locals=0x8 funcid=0x0
+23: TEXT	goopt.Add(SB), NOSPLIT|ABIInternal, $8-72
+23: PUSHQ	BP
+23: MOVQ	SP, BP
+23: MOVQ	AX, goopt.dst+16(FP)
+23: MOVQ	DI, goopt.a+40(FP)
+23: MOVQ	R9, goopt.b+64(FP)
+24: XORL	CX, CX
+24: JMP	33
+25: ADDL	(R9)(CX*4), DX
+25: MOVL	DX, (AX)(CX*4)
+24: INCQ	CX
+24: CMPQ	BX, CX
+24: JLE	53
+25: CMPQ	SI, CX
+25: JLS	60
+25: MOVL	(DI)(CX*4), DX
+25: CMPQ	R10, CX
+25: JHI	23
+25: JMP	55
+27: POPQ	BP
+27: RET
+25: CALL	runtime.panicBounds(SB)
+25: NOP
+25: CALL	runtime.panicBounds(SB)
+25: XCHGL	AX, AX
+goopt.AddBCE STEXT size=197 align=0x0 args=0x48 locals=0x18 funcid=0x0
+29: TEXT	goopt.AddBCE(SB), ABIInternal, $24-72
+29: CMPQ	SP, 16(R14)
+29: JLS	95
+29: PUSHQ	BP
+29: MOVQ	SP, BP
+29: SUBQ	$16, SP
+29: MOVQ	AX, goopt.dst+32(FP)
+29: MOVQ	DI, goopt.a+56(FP)
+29: MOVQ	R9, goopt.b+80(FP)
+29: NOP
+30: CMPQ	BX, SI
+30: JGT	75
+30: CMPQ	BX, R10
+30: JGT	75
+33: XORL	CX, CX
+33: JMP	64
+34: MOVL	(DI)(CX*4), DX
+34: ADDL	(R9)(CX*4), DX
+34: MOVL	DX, (AX)(CX*4)
+33: INCQ	CX
+33: NOP
+33: CMPQ	BX, CX
+33: JGT	46
+36: ADDQ	$16, SP
+36: POPQ	BP
+36: RET
+31: LEAQ	type:string(SB), AX
+31: LEAQ	goopt..stmp_0(SB), BX
+31: CALL	runtime.gopanic(SB)
+31: XCHGL	AX, AX
+31: NOP
+29: MOVQ	AX, 8(SP)
+29: MOVQ	BX, 16(SP)
+29: MOVQ	CX, 24(SP)
+29: MOVQ	DI, 32(SP)
+29: MOVQ	SI, 40(SP)
+29: MOVQ	R8, 48(SP)
+29: MOVQ	R9, 56(SP)
+29: MOVQ	R10, 64(SP)
+29: MOVQ	R11, 72(SP)
+29: CALL	runtime.morestack_noctxt(SB)
+29: MOVQ	8(SP), AX
+29: MOVQ	16(SP), BX
+29: MOVQ	24(SP), CX
+29: MOVQ	32(SP), DI
+29: MOVQ	40(SP), SI
+29: MOVQ	48(SP), R8
+29: MOVQ	56(SP), R9
+29: MOVQ	64(SP), R10
+29: MOVQ	72(SP), R11
+29: NOP
+29: JMP	0
+goopt.SumTo STEXT nosplit size=20 align=0x0 args=0x8 locals=0x0 funcid=0x0
+38: TEXT	goopt.SumTo(SB), NOSPLIT|NOFRAME|ABIInternal, $0-8
+40: XORL	CX, CX
+40: MOVL	$1, DX
+40: JMP	13
+41: ADDL	DX, CX
+40: INCL	DX
+40: CMPL	AX, DX
+40: JCC	9
+43: MOVL	CX, AX
+43: RET
+goopt.Fact STEXT size=99 align=0x0 args=0x10 locals=0x18 funcid=0x0
+46: TEXT	goopt.Fact(SB), ABIInternal, $24-16
+46: CMPQ	SP, 16(R14)
+46: JLS	72
+46: PUSHQ	BP
+46: MOVQ	SP, BP
+46: SUBQ	$16, SP
+47: CMPQ	AX, $1
+47: JLS	63
+50: LEAQ	-1(AX), CX
+	0x0018 00024 (<unknown line number>)	NOP
+50: IMULQ	AX, BX
+50: NOP
+47: CMPQ	CX, $1
+47: JLS	54
+50: ADDQ	$-2, AX
+50: IMULQ	CX, BX
+50: CALL	goopt.Fact(SB)
+50: MOVQ	AX, BX
+50: MOVQ	BX, AX
+50: ADDQ	$16, SP
+50: POPQ	BP
+50: RET
+48: MOVQ	BX, AX
+48: ADDQ	$16, SP
+48: POPQ	BP
+48: RET
+48: NOP
+46: MOVQ	AX, 8(SP)
+46: MOVQ	BX, 16(SP)
+46: CALL	runtime.morestack_noctxt(SB)
+46: MOVQ	8(SP), AX
+46: MOVQ	16(SP), BX
+46: JMP	0
+goopt.NewPointStack STEXT nosplit size=6 align=0x0 args=0x0 locals=0x0 funcid=0x0
+55: TEXT	goopt.NewPointStack(SB), NOSPLIT|NOFRAME|ABIInternal, $0-0
+57: MOVL	$3, AX
+57: RET
+goopt.NewPointHeap STEXT size=66 align=0x0 args=0x0 locals=0x28 funcid=0x0
+60: TEXT	goopt.NewPointHeap(SB), ABIInternal, $40-0
+60: CMPQ	SP, 16(R14)
+60: JLS	58
+60: PUSHQ	BP
+60: MOVQ	SP, BP
+60: SUBQ	$32, SP
+61: MOVL	$16, AX
+61: LEAQ	type:goopt.Point(SB), BX
+61: MOVL	$1, CX
+61: NOP
+61: CALL	runtime.mallocgcSmallNoScanSC2(SB)
+61: MOVQ	$1, (AX)
+61: MOVQ	$2, 8(AX)
+61: ADDQ	$32, SP
+61: POPQ	BP
+61: RET
+61: NOP
+60: CALL	runtime.morestack_noctxt(SB)
+60: NOP
+60: JMP	0
+goopt.F STEXT nosplit size=4 align=0x0 args=0x8 locals=0x0 funcid=0x0
+66: TEXT	goopt.F(SB), NOSPLIT|NOFRAME|ABIInternal, $0-8
+70: INCQ	AX
+70: RET

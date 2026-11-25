@@ -1,0 +1,527 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.5.1, OpenJDK 64-Bit Server VM, 25.0.5.1+2-1-26.04.1-Ubuntu
+# VM invoker: /usr/lib/jvm/java-25-openjdk-amd64/bin/java
+# VM options: -XX:-DoEscapeAnalysis
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jopt.EscBench.escapes
+
+# Run progress: 0,00% complete, ETA 00:01:40
+# Fork: 1 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 7,542 ns/op
+# Warmup Iteration   2: 6,959 ns/op
+# Warmup Iteration   3: 6,495 ns/op
+# Warmup Iteration   4: 6,448 ns/op
+# Warmup Iteration   5: 6,402 ns/op
+Iteration   1: 6,237 ns/op
+                 gc.alloc.rate:      11005,494 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           41,000 counts
+                 gc.time:            3,000 ms
+
+Iteration   2: 6,509 ns/op
+                 gc.alloc.rate:      10509,941 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           40,000 counts
+                 gc.time:            4,000 ms
+
+Iteration   3: 6,511 ns/op
+                 gc.alloc.rate:      10521,649 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           39,000 counts
+                 gc.time:            3,000 ms
+
+Iteration   4: 6,024 ns/op
+                 gc.alloc.rate:      11393,435 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           43,000 counts
+                 gc.time:            3,000 ms
+
+Iteration   5: 6,465 ns/op
+                 gc.alloc.rate:      10601,088 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           40,000 counts
+                 gc.time:            4,000 ms
+
+
+# Run progress: 10,00% complete, ETA 00:01:32
+# Fork: 2 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 7,305 ns/op
+# Warmup Iteration   2: 7,076 ns/op
+# Warmup Iteration   3: 5,971 ns/op
+# Warmup Iteration   4: 7,124 ns/op
+# Warmup Iteration   5: 6,850 ns/op
+Iteration   1: 6,006 ns/op
+                 gc.alloc.rate:      11425,507 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           43,000 counts
+                 gc.time:            4,000 ms
+
+Iteration   2: 6,594 ns/op
+                 gc.alloc.rate:      10409,929 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           39,000 counts
+                 gc.time:            3,000 ms
+
+Iteration   3: 6,399 ns/op
+                 gc.alloc.rate:      10709,867 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           40,000 counts
+                 gc.time:            4,000 ms
+
+Iteration   4: 6,365 ns/op
+                 gc.alloc.rate:      10771,437 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           41,000 counts
+                 gc.time:            3,000 ms
+
+Iteration   5: 6,471 ns/op
+                 gc.alloc.rate:      10591,293 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           39,000 counts
+                 gc.time:            3,000 ms
+
+
+# Run progress: 20,00% complete, ETA 00:01:22
+# Fork: 3 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 7,305 ns/op
+# Warmup Iteration   2: 6,839 ns/op
+# Warmup Iteration   3: 6,374 ns/op
+# Warmup Iteration   4: 6,464 ns/op
+# Warmup Iteration   5: 6,517 ns/op
+Iteration   1: 6,461 ns/op
+                 gc.alloc.rate:      10624,798 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           40,000 counts
+                 gc.time:            4,000 ms
+
+Iteration   2: 6,657 ns/op
+                 gc.alloc.rate:      10270,890 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           39,000 counts
+                 gc.time:            3,000 ms
+
+Iteration   3: 6,359 ns/op
+                 gc.alloc.rate:      10795,312 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           40,000 counts
+                 gc.time:            3,000 ms
+
+Iteration   4: 6,304 ns/op
+                 gc.alloc.rate:      10875,457 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           41,000 counts
+                 gc.time:            3,000 ms
+
+Iteration   5: 6,348 ns/op
+                 gc.alloc.rate:      10787,558 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           41,000 counts
+                 gc.time:            4,000 ms
+
+
+# Run progress: 30,00% complete, ETA 00:01:12
+# Fork: 4 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 7,504 ns/op
+# Warmup Iteration   2: 6,957 ns/op
+# Warmup Iteration   3: 6,296 ns/op
+# Warmup Iteration   4: 6,250 ns/op
+# Warmup Iteration   5: 6,562 ns/op
+Iteration   1: 6,670 ns/op
+                 gc.alloc.rate:      10284,240 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           39,000 counts
+                 gc.time:            3,000 ms
+
+Iteration   2: 6,427 ns/op
+                 gc.alloc.rate:      10683,204 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           40,000 counts
+                 gc.time:            4,000 ms
+
+Iteration   3: 6,596 ns/op
+                 gc.alloc.rate:      10385,407 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           39,000 counts
+                 gc.time:            3,000 ms
+
+Iteration   4: 6,737 ns/op
+                 gc.alloc.rate:      10176,825 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           38,000 counts
+                 gc.time:            3,000 ms
+
+Iteration   5: 6,958 ns/op
+                 gc.alloc.rate:      9853,982 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           37,000 counts
+                 gc.time:            4,000 ms
+
+
+# Run progress: 40,00% complete, ETA 00:01:01
+# Fork: 5 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 7,576 ns/op
+# Warmup Iteration   2: 7,041 ns/op
+# Warmup Iteration   3: 6,399 ns/op
+# Warmup Iteration   4: 6,690 ns/op
+# Warmup Iteration   5: 6,605 ns/op
+Iteration   1: 6,517 ns/op
+                 gc.alloc.rate:      10522,571 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           39,000 counts
+                 gc.time:            3,000 ms
+
+Iteration   2: 12,738 ns/op
+                 gc.alloc.rate:      5388,799 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           21,000 counts
+                 gc.time:            5,000 ms
+
+Iteration   3: 10,716 ns/op
+                 gc.alloc.rate:      6405,960 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           24,000 counts
+                 gc.time:            3,000 ms
+
+Iteration   4: 10,530 ns/op
+                 gc.alloc.rate:      6510,964 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           24,000 counts
+                 gc.time:            4,000 ms
+
+Iteration   5: 11,152 ns/op
+                 gc.alloc.rate:      6152,040 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           23,000 counts
+                 gc.time:            4,000 ms
+
+
+
+Result "jopt.EscBench.escapes":
+  7,230 ±(99.9%) 1,387 ns/op [Average]
+  (min, avg, max) = (6,006, 7,230, 12,738), stdev = 1,851
+  CI (99.9%): [5,843, 8,617] (assumes normal distribution)
+
+Secondary result "jopt.EscBench.escapes:gc.alloc.rate":
+  9906,306 ±(99.9%) 1296,909 MB/sec [Average]
+  (min, avg, max) = (5388,799, 9906,306, 11425,507), stdev = 1731,337
+  CI (99.9%): [8609,397, 11203,215] (assumes normal distribution)
+
+Secondary result "jopt.EscBench.escapes:gc.alloc.rate.norm":
+  72,000 ±(99.9%) 0,001 B/op [Average]
+  (min, avg, max) = (72,000, 72,000, 72,000), stdev = 0,001
+  CI (99.9%): [72,000, 72,000] (assumes normal distribution)
+
+Secondary result "jopt.EscBench.escapes:gc.count":
+  930,000 ±(99.9%) 0,001 counts [Sum]
+  (min, avg, max) = (21,000, 37,200, 43,000), stdev = 6,481
+  CI (99.9%): [930,000, 930,000] (assumes normal distribution)
+
+Secondary result "jopt.EscBench.escapes:gc.time":
+  87,000 ±(99.9%) 0,001 ms [Sum]
+  (min, avg, max) = (3,000, 3,480, 5,000), stdev = 0,586
+  CI (99.9%): [87,000, 87,000] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.5.1, OpenJDK 64-Bit Server VM, 25.0.5.1+2-1-26.04.1-Ubuntu
+# VM invoker: /usr/lib/jvm/java-25-openjdk-amd64/bin/java
+# VM options: -XX:-DoEscapeAnalysis
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jopt.EscBench.local
+
+# Run progress: 50,00% complete, ETA 00:00:51
+# Fork: 1 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 15,122 ns/op
+# Warmup Iteration   2: 11,059 ns/op
+# Warmup Iteration   3: 11,203 ns/op
+# Warmup Iteration   4: 11,943 ns/op
+# Warmup Iteration   5: 12,818 ns/op
+Iteration   1: 10,217 ns/op
+                 gc.alloc.rate:      6713,531 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           25,000 counts
+                 gc.time:            4,000 ms
+
+Iteration   2: 11,060 ns/op
+                 gc.alloc.rate:      6207,322 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           23,000 counts
+                 gc.time:            4,000 ms
+
+Iteration   3: 12,116 ns/op
+                 gc.alloc.rate:      5655,644 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           21,000 counts
+                 gc.time:            4,000 ms
+
+Iteration   4: 12,055 ns/op
+                 gc.alloc.rate:      5694,840 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           22,000 counts
+                 gc.time:            4,000 ms
+
+Iteration   5: 14,770 ns/op
+                 gc.alloc.rate:      4631,103 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           17,000 counts
+                 gc.time:            4,000 ms
+
+
+# Run progress: 60,00% complete, ETA 00:00:41
+# Fork: 2 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 14,700 ns/op
+# Warmup Iteration   2: 12,703 ns/op
+# Warmup Iteration   3: 11,184 ns/op
+# Warmup Iteration   4: 11,742 ns/op
+# Warmup Iteration   5: 12,920 ns/op
+Iteration   1: 18,270 ns/op
+                 gc.alloc.rate:      3750,419 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           14,000 counts
+                 gc.time:            4,000 ms
+
+Iteration   2: 13,390 ns/op
+                 gc.alloc.rate:      5114,632 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           20,000 counts
+                 gc.time:            5,000 ms
+
+Iteration   3: 11,888 ns/op
+                 gc.alloc.rate:      5761,744 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           21,000 counts
+                 gc.time:            4,000 ms
+
+Iteration   4: 10,892 ns/op
+                 gc.alloc.rate:      6273,735 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           24,000 counts
+                 gc.time:            3,000 ms
+
+Iteration   5: 12,067 ns/op
+                 gc.alloc.rate:      5680,587 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           21,000 counts
+                 gc.time:            3,000 ms
+
+
+# Run progress: 70,00% complete, ETA 00:00:31
+# Fork: 3 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 12,742 ns/op
+# Warmup Iteration   2: 10,941 ns/op
+# Warmup Iteration   3: 10,156 ns/op
+# Warmup Iteration   4: 11,604 ns/op
+# Warmup Iteration   5: 10,563 ns/op
+Iteration   1: 10,642 ns/op
+                 gc.alloc.rate:      6441,442 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           25,000 counts
+                 gc.time:            3,000 ms
+
+Iteration   2: 10,306 ns/op
+                 gc.alloc.rate:      6660,716 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           24,000 counts
+                 gc.time:            4,000 ms
+
+Iteration   3: 12,748 ns/op
+                 gc.alloc.rate:      5383,145 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           21,000 counts
+                 gc.time:            5,000 ms
+
+Iteration   4: 11,688 ns/op
+                 gc.alloc.rate:      5865,272 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           22,000 counts
+                 gc.time:            3,000 ms
+
+Iteration   5: 12,777 ns/op
+                 gc.alloc.rate:      5360,614 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           20,000 counts
+                 gc.time:            5,000 ms
+
+
+# Run progress: 80,00% complete, ETA 00:00:20
+# Fork: 4 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 12,516 ns/op
+# Warmup Iteration   2: 10,888 ns/op
+# Warmup Iteration   3: 11,661 ns/op
+# Warmup Iteration   4: 11,284 ns/op
+# Warmup Iteration   5: 9,235 ns/op
+Iteration   1: 9,475 ns/op
+                 gc.alloc.rate:      7238,843 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           27,000 counts
+                 gc.time:            3,000 ms
+
+Iteration   2: 11,554 ns/op
+                 gc.alloc.rate:      5925,411 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           22,000 counts
+                 gc.time:            5,000 ms
+
+Iteration   3: 10,878 ns/op
+                 gc.alloc.rate:      6310,898 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           24,000 counts
+                 gc.time:            3,000 ms
+
+Iteration   4: 9,999 ns/op
+                 gc.alloc.rate:      6853,358 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           25,000 counts
+                 gc.time:            4,000 ms
+
+Iteration   5: 10,967 ns/op
+                 gc.alloc.rate:      6251,151 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           24,000 counts
+                 gc.time:            4,000 ms
+
+
+# Run progress: 90,00% complete, ETA 00:00:10
+# Fork: 5 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 13,073 ns/op
+# Warmup Iteration   2: 12,138 ns/op
+# Warmup Iteration   3: 10,059 ns/op
+# Warmup Iteration   4: 10,610 ns/op
+# Warmup Iteration   5: 11,567 ns/op
+Iteration   1: 10,911 ns/op
+                 gc.alloc.rate:      6285,176 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           23,000 counts
+                 gc.time:            4,000 ms
+
+Iteration   2: 10,804 ns/op
+                 gc.alloc.rate:      6354,188 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           24,000 counts
+                 gc.time:            4,000 ms
+
+Iteration   3: 10,808 ns/op
+                 gc.alloc.rate:      6340,536 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           24,000 counts
+                 gc.time:            4,000 ms
+
+Iteration   4: 9,520 ns/op
+                 gc.alloc.rate:      7209,639 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           27,000 counts
+                 gc.time:            4,000 ms
+
+Iteration   5: 10,169 ns/op
+                 gc.alloc.rate:      6741,970 MB/sec
+                 gc.alloc.rate.norm: 72,000 B/op
+                 gc.count:           25,000 counts
+                 gc.time:            4,000 ms
+
+
+
+Result "jopt.EscBench.local":
+  11,599 ±(99.9%) 1,390 ns/op [Average]
+  (min, avg, max) = (9,475, 11,599, 18,270), stdev = 1,856
+  CI (99.9%): [10,209, 12,989] (assumes normal distribution)
+
+Secondary result "jopt.EscBench.local:gc.alloc.rate":
+  6028,237 ±(99.9%) 590,214 MB/sec [Average]
+  (min, avg, max) = (3750,419, 6028,237, 7238,843), stdev = 787,919
+  CI (99.9%): [5438,022, 6618,451] (assumes normal distribution)
+
+Secondary result "jopt.EscBench.local:gc.alloc.rate.norm":
+  72,000 ±(99.9%) 0,001 B/op [Average]
+  (min, avg, max) = (72,000, 72,000, 72,000), stdev = 0,001
+  CI (99.9%): [72,000, 72,000] (assumes normal distribution)
+
+Secondary result "jopt.EscBench.local:gc.count":
+  565,000 ±(99.9%) 0,001 counts [Sum]
+  (min, avg, max) = (14,000, 22,600, 27,000), stdev = 2,915
+  CI (99.9%): [565,000, 565,000] (assumes normal distribution)
+
+Secondary result "jopt.EscBench.local:gc.time":
+  98,000 ±(99.9%) 0,001 ms [Sum]
+  (min, avg, max) = (3,000, 3,920, 5,000), stdev = 0,640
+  CI (99.9%): [98,000, 98,000] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:01:43
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                            Mode  Cnt     Score      Error   Units
+EscBench.escapes                     avgt   25     7,230 ±    1,387   ns/op
+EscBench.escapes:gc.alloc.rate       avgt   25  9906,306 ± 1296,909  MB/sec
+EscBench.escapes:gc.alloc.rate.norm  avgt   25    72,000 ±    0,001    B/op
+EscBench.escapes:gc.count            avgt   25   930,000             counts
+EscBench.escapes:gc.time             avgt   25    87,000                 ms
+EscBench.local                       avgt   25    11,599 ±    1,390   ns/op
+EscBench.local:gc.alloc.rate         avgt   25  6028,237 ±  590,214  MB/sec
+EscBench.local:gc.alloc.rate.norm    avgt   25    72,000 ±    0,001    B/op
+EscBench.local:gc.count              avgt   25   565,000             counts
+EscBench.local:gc.time               avgt   25    98,000                 ms

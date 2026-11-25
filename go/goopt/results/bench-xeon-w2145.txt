@@ -1,0 +1,42 @@
+host: cpu: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz  pinned: cpu 4 (sibling 12 left idle)
+date: 2026-11-23T11:25:32+01:00  kernel: 6.8.0-149-generic  governor: performance  load: 1.87 1.92 2.89
+per-cpu busy % before the run:
+0 1.2 1 1.2 2 1.8 3 1.2 4 1.0 5 1.8 6 1.2 7 2.4 8 2.4 9 1.2 10 2.2 11 2.4 12 1.0 13 2.2 14 1.6 15 1.6 
+load after: 1.42 1.50 2.39
+binaries built locally (gcc 15.2 / clang 21.1 -static; Go 1.27.4 go test -c), run pinned with taskset
+
+goos: linux
+goarch: amd64
+pkg: goopt
+cpu: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz
+BenchmarkHashNaive 	 4947775	       244.7 ns/op
+BenchmarkHashNaive 	 4923028	       244.4 ns/op
+BenchmarkHashNaive 	 4888960	       245.5 ns/op
+BenchmarkHashNaive 	 4924016	       244.4 ns/op
+BenchmarkHashNaive 	 4871830	       245.0 ns/op
+BenchmarkHashNaive 	 4899594	       245.1 ns/op
+BenchmarkHashNaive 	 4882472	       245.4 ns/op
+BenchmarkHashNaive 	 4893969	       246.7 ns/op
+BenchmarkHashNaive 	 4879546	       245.3 ns/op
+BenchmarkHashNaive 	 4893998	       249.4 ns/op
+BenchmarkHashSink  	 1676604	       712.6 ns/op
+BenchmarkHashSink  	 1687371	       709.1 ns/op
+BenchmarkHashSink  	 1689333	       708.3 ns/op
+BenchmarkHashSink  	 1691355	       710.1 ns/op
+BenchmarkHashSink  	 1695084	       708.9 ns/op
+BenchmarkHashSink  	 1684489	       712.0 ns/op
+BenchmarkHashSink  	 1686638	       709.5 ns/op
+BenchmarkHashSink  	 1681845	       707.1 ns/op
+BenchmarkHashSink  	 1698349	       710.9 ns/op
+BenchmarkHashSink  	 1689930	       710.9 ns/op
+BenchmarkHashLoop  	 1693246	       709.1 ns/op
+BenchmarkHashLoop  	 1696304	       708.6 ns/op
+BenchmarkHashLoop  	 1692334	       708.0 ns/op
+BenchmarkHashLoop  	 1694960	       710.2 ns/op
+BenchmarkHashLoop  	 1694226	       707.0 ns/op
+BenchmarkHashLoop  	 1690119	       711.5 ns/op
+BenchmarkHashLoop  	 1693431	       707.9 ns/op
+BenchmarkHashLoop  	 1693198	       708.6 ns/op
+BenchmarkHashLoop  	 1685006	       710.6 ns/op
+BenchmarkHashLoop  	 1696004	       706.6 ns/op
+PASS

@@ -1,0 +1,549 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# JMH version: 1.37
+# VM version: JDK 25.0.5.1, OpenJDK 64-Bit Server VM, 25.0.5.1+2-1-26.04.1-Ubuntu
+# VM invoker: /usr/lib/jvm/java-25-openjdk-amd64/bin/java
+# VM options: -XX:-UseSuperWord
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jopt.VecBench.add
+# Parameters: (n = 4096)
+
+# Run progress: 0,00% complete, ETA 00:04:10
+# Fork: 1 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 725,850 ns/op
+# Warmup Iteration   2: 725,346 ns/op
+# Warmup Iteration   3: 758,630 ns/op
+# Warmup Iteration   4: 790,524 ns/op
+# Warmup Iteration   5: 819,725 ns/op
+Iteration   1: 782,577 ns/op
+Iteration   2: 785,907 ns/op
+Iteration   3: 810,566 ns/op
+Iteration   4: 789,524 ns/op
+Iteration   5: 809,066 ns/op
+
+# Run progress: 4,00% complete, ETA 00:04:08
+# Fork: 2 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 818,668 ns/op
+# Warmup Iteration   2: 803,610 ns/op
+# Warmup Iteration   3: 824,360 ns/op
+# Warmup Iteration   4: 783,224 ns/op
+# Warmup Iteration   5: 817,665 ns/op
+Iteration   1: 795,269 ns/op
+Iteration   2: 807,651 ns/op
+Iteration   3: 794,883 ns/op
+Iteration   4: 808,954 ns/op
+Iteration   5: 798,354 ns/op
+
+# Run progress: 8,00% complete, ETA 00:03:57
+# Fork: 3 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 777,640 ns/op
+# Warmup Iteration   2: 779,034 ns/op
+# Warmup Iteration   3: 814,321 ns/op
+# Warmup Iteration   4: 793,109 ns/op
+# Warmup Iteration   5: 796,591 ns/op
+Iteration   1: 809,706 ns/op
+Iteration   2: 799,202 ns/op
+Iteration   3: 787,327 ns/op
+Iteration   4: 772,594 ns/op
+Iteration   5: 757,489 ns/op
+
+# Run progress: 12,00% complete, ETA 00:03:47
+# Fork: 4 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 729,438 ns/op
+# Warmup Iteration   2: 731,659 ns/op
+# Warmup Iteration   3: 795,846 ns/op
+# Warmup Iteration   4: 777,326 ns/op
+# Warmup Iteration   5: 773,758 ns/op
+Iteration   1: 774,226 ns/op
+Iteration   2: 768,225 ns/op
+Iteration   3: 792,815 ns/op
+Iteration   4: 800,364 ns/op
+Iteration   5: 780,800 ns/op
+
+# Run progress: 16,00% complete, ETA 00:03:36
+# Fork: 5 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 747,892 ns/op
+# Warmup Iteration   2: 765,882 ns/op
+# Warmup Iteration   3: 799,578 ns/op
+# Warmup Iteration   4: 761,485 ns/op
+# Warmup Iteration   5: 753,971 ns/op
+Iteration   1: 763,911 ns/op
+Iteration   2: 761,771 ns/op
+Iteration   3: 753,669 ns/op
+Iteration   4: 765,410 ns/op
+Iteration   5: 771,768 ns/op
+
+
+Result "jopt.VecBench.add":
+  785,681 ±(99.9%) 13,402 ns/op [Average]
+  (min, avg, max) = (753,669, 785,681, 810,566), stdev = 17,891
+  CI (99.9%): [772,279, 799,083] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.5.1, OpenJDK 64-Bit Server VM, 25.0.5.1+2-1-26.04.1-Ubuntu
+# VM invoker: /usr/lib/jvm/java-25-openjdk-amd64/bin/java
+# VM options: -XX:-UseSuperWord
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jopt.VecBench.floatSum
+# Parameters: (n = 4096)
+
+# Run progress: 20,00% complete, ETA 00:03:26
+# Fork: 1 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1932,477 ns/op
+# Warmup Iteration   2: 1933,845 ns/op
+# Warmup Iteration   3: 1916,032 ns/op
+# Warmup Iteration   4: 1922,770 ns/op
+# Warmup Iteration   5: 1918,964 ns/op
+Iteration   1: 1914,443 ns/op
+Iteration   2: 1906,471 ns/op
+Iteration   3: 1912,943 ns/op
+Iteration   4: 1935,845 ns/op
+Iteration   5: 1921,474 ns/op
+
+# Run progress: 24,00% complete, ETA 00:03:15
+# Fork: 2 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1939,822 ns/op
+# Warmup Iteration   2: 1956,667 ns/op
+# Warmup Iteration   3: 1897,140 ns/op
+# Warmup Iteration   4: 1855,524 ns/op
+# Warmup Iteration   5: 1898,491 ns/op
+Iteration   1: 1905,786 ns/op
+Iteration   2: 1871,104 ns/op
+Iteration   3: 1892,773 ns/op
+Iteration   4: 1889,849 ns/op
+Iteration   5: 1906,044 ns/op
+
+# Run progress: 28,00% complete, ETA 00:03:05
+# Fork: 3 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1922,609 ns/op
+# Warmup Iteration   2: 1907,121 ns/op
+# Warmup Iteration   3: 1886,333 ns/op
+# Warmup Iteration   4: 1906,826 ns/op
+# Warmup Iteration   5: 1917,374 ns/op
+Iteration   1: 1903,580 ns/op
+Iteration   2: 1901,541 ns/op
+Iteration   3: 1886,944 ns/op
+Iteration   4: 1879,194 ns/op
+Iteration   5: 1877,750 ns/op
+
+# Run progress: 32,00% complete, ETA 00:02:55
+# Fork: 4 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1908,788 ns/op
+# Warmup Iteration   2: 1877,278 ns/op
+# Warmup Iteration   3: 1880,321 ns/op
+# Warmup Iteration   4: 1870,218 ns/op
+# Warmup Iteration   5: 1827,945 ns/op
+Iteration   1: 1850,053 ns/op
+Iteration   2: 1873,028 ns/op
+Iteration   3: 1824,345 ns/op
+Iteration   4: 1827,413 ns/op
+Iteration   5: 1840,392 ns/op
+
+# Run progress: 36,00% complete, ETA 00:02:44
+# Fork: 5 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1854,516 ns/op
+# Warmup Iteration   2: 1829,665 ns/op
+# Warmup Iteration   3: 1881,127 ns/op
+# Warmup Iteration   4: 1910,692 ns/op
+# Warmup Iteration   5: 1871,689 ns/op
+Iteration   1: 1884,290 ns/op
+Iteration   2: 1878,984 ns/op
+Iteration   3: 1879,673 ns/op
+Iteration   4: 1894,703 ns/op
+Iteration   5: 1892,297 ns/op
+
+
+Result "jopt.VecBench.floatSum":
+  1886,037 ±(99.9%) 20,753 ns/op [Average]
+  (min, avg, max) = (1824,345, 1886,037, 1935,845), stdev = 27,704
+  CI (99.9%): [1865,284, 1906,789] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.5.1, OpenJDK 64-Bit Server VM, 25.0.5.1+2-1-26.04.1-Ubuntu
+# VM invoker: /usr/lib/jvm/java-25-openjdk-amd64/bin/java
+# VM options: -XX:-UseSuperWord
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jopt.VecBench.intDot
+# Parameters: (n = 4096)
+
+# Run progress: 40,00% complete, ETA 00:02:34
+# Fork: 1 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1216,725 ns/op
+# Warmup Iteration   2: 1056,616 ns/op
+# Warmup Iteration   3: 1306,818 ns/op
+# Warmup Iteration   4: 1304,024 ns/op
+# Warmup Iteration   5: 1211,996 ns/op
+Iteration   1: 1191,964 ns/op
+Iteration   2: 1185,194 ns/op
+Iteration   3: 1162,370 ns/op
+Iteration   4: 1150,108 ns/op
+Iteration   5: 1127,331 ns/op
+
+# Run progress: 44,00% complete, ETA 00:02:24
+# Fork: 2 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1066,210 ns/op
+# Warmup Iteration   2: 989,224 ns/op
+# Warmup Iteration   3: 1276,853 ns/op
+# Warmup Iteration   4: 1271,556 ns/op
+# Warmup Iteration   5: 1297,786 ns/op
+Iteration   1: 1298,469 ns/op
+Iteration   2: 1301,802 ns/op
+Iteration   3: 1291,740 ns/op
+Iteration   4: 1285,478 ns/op
+Iteration   5: 1281,897 ns/op
+
+# Run progress: 48,00% complete, ETA 00:02:13
+# Fork: 3 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1110,459 ns/op
+# Warmup Iteration   2: 1016,021 ns/op
+# Warmup Iteration   3: 1265,438 ns/op
+# Warmup Iteration   4: 1257,557 ns/op
+# Warmup Iteration   5: 1254,791 ns/op
+Iteration   1: 1272,719 ns/op
+Iteration   2: 1266,876 ns/op
+Iteration   3: 1273,791 ns/op
+Iteration   4: 1252,043 ns/op
+Iteration   5: 1281,655 ns/op
+
+# Run progress: 52,00% complete, ETA 00:02:03
+# Fork: 4 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1088,607 ns/op
+# Warmup Iteration   2: 997,179 ns/op
+# Warmup Iteration   3: 1269,714 ns/op
+# Warmup Iteration   4: 1217,711 ns/op
+# Warmup Iteration   5: 1223,921 ns/op
+Iteration   1: 1240,674 ns/op
+Iteration   2: 1235,078 ns/op
+Iteration   3: 1240,956 ns/op
+Iteration   4: 1293,997 ns/op
+Iteration   5: 1304,449 ns/op
+
+# Run progress: 56,00% complete, ETA 00:01:53
+# Fork: 5 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 1173,819 ns/op
+# Warmup Iteration   2: 1056,012 ns/op
+# Warmup Iteration   3: 1305,009 ns/op
+# Warmup Iteration   4: 1305,879 ns/op
+# Warmup Iteration   5: 1306,922 ns/op
+Iteration   1: 1319,821 ns/op
+Iteration   2: 1315,155 ns/op
+Iteration   3: 1314,567 ns/op
+Iteration   4: 1301,505 ns/op
+Iteration   5: 1266,350 ns/op
+
+
+Result "jopt.VecBench.intDot":
+  1258,240 ±(99.9%) 40,886 ns/op [Average]
+  (min, avg, max) = (1127,331, 1258,240, 1319,821), stdev = 54,582
+  CI (99.9%): [1217,353, 1299,126] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.5.1, OpenJDK 64-Bit Server VM, 25.0.5.1+2-1-26.04.1-Ubuntu
+# VM invoker: /usr/lib/jvm/java-25-openjdk-amd64/bin/java
+# VM options: -XX:-UseSuperWord
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jopt.VecBench.intSum
+# Parameters: (n = 4096)
+
+# Run progress: 60,00% complete, ETA 00:01:42
+# Fork: 1 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 963,360 ns/op
+# Warmup Iteration   2: 970,971 ns/op
+# Warmup Iteration   3: 963,058 ns/op
+# Warmup Iteration   4: 971,030 ns/op
+# Warmup Iteration   5: 968,026 ns/op
+Iteration   1: 965,537 ns/op
+Iteration   2: 957,079 ns/op
+Iteration   3: 970,493 ns/op
+Iteration   4: 966,915 ns/op
+Iteration   5: 962,262 ns/op
+
+# Run progress: 64,00% complete, ETA 00:01:32
+# Fork: 2 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 980,318 ns/op
+# Warmup Iteration   2: 987,723 ns/op
+# Warmup Iteration   3: 969,530 ns/op
+# Warmup Iteration   4: 968,358 ns/op
+# Warmup Iteration   5: 967,559 ns/op
+Iteration   1: 960,225 ns/op
+Iteration   2: 955,012 ns/op
+Iteration   3: 957,961 ns/op
+Iteration   4: 960,038 ns/op
+Iteration   5: 958,004 ns/op
+
+# Run progress: 68,00% complete, ETA 00:01:22
+# Fork: 3 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 984,225 ns/op
+# Warmup Iteration   2: 984,820 ns/op
+# Warmup Iteration   3: 966,941 ns/op
+# Warmup Iteration   4: 968,055 ns/op
+# Warmup Iteration   5: 966,448 ns/op
+Iteration   1: 971,907 ns/op
+Iteration   2: 971,152 ns/op
+Iteration   3: 975,175 ns/op
+Iteration   4: 971,109 ns/op
+Iteration   5: 965,874 ns/op
+
+# Run progress: 72,00% complete, ETA 00:01:11
+# Fork: 4 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 983,936 ns/op
+# Warmup Iteration   2: 973,209 ns/op
+# Warmup Iteration   3: 935,628 ns/op
+# Warmup Iteration   4: 973,846 ns/op
+# Warmup Iteration   5: 959,926 ns/op
+Iteration   1: 942,086 ns/op
+Iteration   2: 949,575 ns/op
+Iteration   3: 950,672 ns/op
+Iteration   4: 957,681 ns/op
+Iteration   5: 955,278 ns/op
+
+# Run progress: 76,00% complete, ETA 00:01:01
+# Fork: 5 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 975,659 ns/op
+# Warmup Iteration   2: 964,032 ns/op
+# Warmup Iteration   3: 959,119 ns/op
+# Warmup Iteration   4: 953,219 ns/op
+# Warmup Iteration   5: 952,415 ns/op
+Iteration   1: 956,045 ns/op
+Iteration   2: 952,177 ns/op
+Iteration   3: 960,016 ns/op
+Iteration   4: 967,773 ns/op
+Iteration   5: 966,764 ns/op
+
+
+Result "jopt.VecBench.intSum":
+  961,072 ±(99.9%) 6,094 ns/op [Average]
+  (min, avg, max) = (942,086, 961,072, 975,175), stdev = 8,135
+  CI (99.9%): [954,979, 967,166] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 25.0.5.1, OpenJDK 64-Bit Server VM, 25.0.5.1+2-1-26.04.1-Ubuntu
+# VM invoker: /usr/lib/jvm/java-25-openjdk-amd64/bin/java
+# VM options: -XX:-UseSuperWord
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 1 s each
+# Measurement: 5 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: jopt.VecBench.longSum
+# Parameters: (n = 4096)
+
+# Run progress: 80,00% complete, ETA 00:00:51
+# Fork: 1 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 975,847 ns/op
+# Warmup Iteration   2: 975,132 ns/op
+# Warmup Iteration   3: 970,979 ns/op
+# Warmup Iteration   4: 965,153 ns/op
+# Warmup Iteration   5: 974,275 ns/op
+Iteration   1: 961,030 ns/op
+Iteration   2: 963,518 ns/op
+Iteration   3: 972,450 ns/op
+Iteration   4: 963,559 ns/op
+Iteration   5: 957,992 ns/op
+
+# Run progress: 84,00% complete, ETA 00:00:41
+# Fork: 2 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 984,595 ns/op
+# Warmup Iteration   2: 974,719 ns/op
+# Warmup Iteration   3: 970,092 ns/op
+# Warmup Iteration   4: 965,784 ns/op
+# Warmup Iteration   5: 964,651 ns/op
+Iteration   1: 970,100 ns/op
+Iteration   2: 969,471 ns/op
+Iteration   3: 961,807 ns/op
+Iteration   4: 959,224 ns/op
+Iteration   5: 958,913 ns/op
+
+# Run progress: 88,00% complete, ETA 00:00:30
+# Fork: 3 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 970,672 ns/op
+# Warmup Iteration   2: 966,314 ns/op
+# Warmup Iteration   3: 955,928 ns/op
+# Warmup Iteration   4: 947,970 ns/op
+# Warmup Iteration   5: 955,043 ns/op
+Iteration   1: 957,448 ns/op
+Iteration   2: 938,619 ns/op
+Iteration   3: 946,451 ns/op
+Iteration   4: 954,814 ns/op
+Iteration   5: 967,362 ns/op
+
+# Run progress: 92,00% complete, ETA 00:00:20
+# Fork: 4 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 979,916 ns/op
+# Warmup Iteration   2: 972,448 ns/op
+# Warmup Iteration   3: 969,307 ns/op
+# Warmup Iteration   4: 965,062 ns/op
+# Warmup Iteration   5: 969,197 ns/op
+Iteration   1: 966,876 ns/op
+Iteration   2: 973,605 ns/op
+Iteration   3: 970,902 ns/op
+Iteration   4: 977,891 ns/op
+Iteration   5: 976,489 ns/op
+
+# Run progress: 96,00% complete, ETA 00:00:10
+# Fork: 5 of 5
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by org.openjdk.jmh.util.Utils (file:.../java/jmh/target/benchmarks.jar)
+WARNING: Please consider reporting this to the maintainers of class org.openjdk.jmh.util.Utils
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+# Warmup Iteration   1: 978,239 ns/op
+# Warmup Iteration   2: 967,087 ns/op
+# Warmup Iteration   3: 963,427 ns/op
+# Warmup Iteration   4: 967,474 ns/op
+# Warmup Iteration   5: 969,952 ns/op
+Iteration   1: 972,686 ns/op
+Iteration   2: 973,434 ns/op
+Iteration   3: 969,841 ns/op
+Iteration   4: 970,376 ns/op
+Iteration   5: 966,314 ns/op
+
+
+Result "jopt.VecBench.longSum":
+  964,847 ±(99.9%) 6,926 ns/op [Average]
+  (min, avg, max) = (938,619, 964,847, 977,891), stdev = 9,246
+  CI (99.9%): [957,921, 971,773] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:04:17
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark           (n)  Mode  Cnt     Score    Error  Units
+VecBench.add       4096  avgt   25   785,681 ± 13,402  ns/op
+VecBench.floatSum  4096  avgt   25  1886,037 ± 20,753  ns/op
+VecBench.intDot    4096  avgt   25  1258,240 ± 40,886  ns/op
+VecBench.intSum    4096  avgt   25   961,072 ±  6,094  ns/op
+VecBench.longSum   4096  avgt   25   964,847 ±  6,926  ns/op

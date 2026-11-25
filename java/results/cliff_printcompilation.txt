@@ -1,0 +1,184 @@
+13    1       3       java.lang.Object::<init> (1 bytes)
+14    2       3       java.lang.Byte::toUnsignedInt (6 bytes)
+14    3       3       java.lang.String::hashCode (60 bytes)
+15    4     n 0       jdk.internal.misc.Unsafe::getReferenceVolatile (native)   
+15    5     n 0       jdk.internal.vm.Continuation::enterSpecial (native)   (static)
+15    6     n 0       jdk.internal.vm.Continuation::doYield (native)   (static)
+15    7       3       java.lang.String::coder (15 bytes)
+16    8       3       java.lang.String::length (11 bytes)
+16    9       3       java.lang.String::isLatin1 (19 bytes)
+16   10       3       Cliff$Sq::<init> (10 bytes)
+16   11       3       Cliff$Sq::area (10 bytes)
+16   12       4       Cliff$Sq::area (10 bytes)
+16   11       3       Cliff$Sq::area (10 bytes)   made not entrant: not used
+17   13 %     3       Cliff::total @ 11 (43 bytes)
+18   14       3       Cliff::total (43 bytes)
+18   15 %     4       Cliff::total @ 11 (43 bytes)
+20   13 %     3       Cliff::total @ 11 (43 bytes)   made not entrant: OSR invalidation of lower level
+21   16       4       Cliff::total (43 bytes)
+26   14       3       Cliff::total (43 bytes)   made not entrant: not used
+35   17       3       jdk.internal.util.Preconditions::checkIndex (18 bytes)
+35   18       3       java.lang.String::charAt (25 bytes)
+window 36   19       3       sun.util.locale.LocaleUtils::isUpper (18 bytes)
+36   20     n 0       java.lang.System::arraycopy (native)   (static)
+36   21       3       java.lang.String::equals (56 bytes)
+36   22       3       java.util.HashMap::hash (20 bytes)
+36   23       3       java.util.HashMap::putVal (300 bytes)
+37   24       3       java.util.HashMap$Node::<init> (26 bytes)
+37   25       3       java.util.HashMap::put (13 bytes)
+37   26     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LL)V (native)   (static)
+38   27       4       java.lang.Object::<init> (1 bytes)
+38    1       3       java.lang.Object::<init> (1 bytes)   made not entrant: not used
+38   28       1       java.lang.Enum::ordinal (5 bytes)
+38   29     n 0       java.lang.invoke.MethodHandle::invokeBasic()L (native)   
+38   30     n 0       java.lang.Object::hashCode (native)   
+38   31       3       java.util.concurrent.ConcurrentHashMap::tabAt (21 bytes)
+38   32       3       java.util.Objects::requireNonNull (14 bytes)
+39   33     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LL)L (native)   (static)
+39   34       3       java.util.concurrent.ConcurrentHashMap::spread (10 bytes)
+40   35     n 0       java.lang.invoke.MethodHandle::linkToStatic(L)L (native)   (static)
+40   36     n 0       jdk.internal.misc.Unsafe::compareAndSetLong (native)   
+40   37       1       jdk.internal.util.StrongReferenceKey::get (5 bytes)
+40   38       1       java.lang.Class::isPrimitive (5 bytes)
+40   39     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLL)L (native)   (static)
+40   40     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLLL)L (native)   (static)
+40   41     n 0       jdk.internal.misc.Unsafe::compareAndSetReference (native)   
+41   42       3       java.lang.Enum::<init> (15 bytes)
+41   43       4       java.lang.Byte::toUnsignedInt (6 bytes)
+42    2       3       java.lang.Byte::toUnsignedInt (6 bytes)   made not entrant: not used
+42   44     n 0       java.lang.invoke.MethodHandle::invokeBasic(L)L (native)   
+42   45     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LLL)L (native)   (static)
+42   46     n 0       java.lang.Object::clone (native)   
+43   47       3       java.lang.StringLatin1::equals (36 bytes)
+43   48       1       java.lang.invoke.MethodType::returnType (5 bytes)
+43   49     n 0       java.lang.invoke.MethodHandle::linkToStatic(LLLLLLL)L (native)   (static)
+43   50       1       java.lang.Class::getClassLoader (5 bytes)
+43   51   !   3       java.lang.ref.ReferenceQueue::poll (44 bytes)
+44   52       3       jdk.internal.util.ReferencedKeyMap::removeStaleReferences (30 bytes)
+44   53     n 0       java.lang.invoke.MethodHandle::linkToStatic(IIL)I (native)   (static)
+44   54       3       java.util.concurrent.ConcurrentHashMap::get (162 bytes)
+44   55     n 0       java.lang.invoke.MethodHandle::invokeBasic(LLLLLL)L (native)   
+44   56       1       jdk.internal.classfile.impl.AbstractPoolEntry::index (5 bytes)
+44   57       3       java.lang.Math::min (11 bytes)
+45   58     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LIL)V (native)   (static)
+45   59     n 0       java.lang.invoke.MethodHandle::invokeBasic(I)L (native)   
+45   60     n 0       java.lang.invoke.MethodHandle::linkToSpecial(LIL)L (native)   (static)
+45   61       3       java.util.regex.Pattern$$Lambda/0x800000027::is (9 bytes)
+45   62       3       java.util.regex.Pattern$BmpCharPropertyGreedy::match (89 bytes)
+45   63       3       java.util.regex.Matcher::checkMatch (19 bytes)
+45   64       3       java.lang.String::<init> (15 bytes)
+45   65       3       jdk.internal.util.Preconditions::checkFromToIndex (24 bytes)
+46   66       3       java.lang.String::checkBoundsBeginEnd (11 bytes)
+46   67       3       java.util.Arrays::copyOfRange (82 bytes)
+46   68       3       java.lang.String::substring (58 bytes)
+46   69       3       java.util.ArrayList::add (25 bytes)
+46   70       3       java.lang.String::toString (2 bytes)
+46   71       3       java.util.regex.Matcher::start (9 bytes)
+46   72       3       java.lang.String::subSequence (7 bytes)
+46   73       3       java.util.regex.Matcher::end (9 bytes)
+47   74       3       java.util.regex.Matcher::find (69 bytes)
+47   75       3       java.util.regex.Pattern$Start::match (90 bytes)
+47   76       3       java.util.regex.Pattern$LastNode::match (45 bytes)
+47   77       3       java.lang.StringLatin1::newString (24 bytes)
+47   78       3       java.util.regex.Matcher::search (154 bytes)
+47   79       4       java.lang.String::charAt (25 bytes)
+48   18       3       java.lang.String::charAt (25 bytes)   made not entrant: not used
+49   62       3       java.util.regex.Pattern$BmpCharPropertyGreedy::match (89 bytes)   made not entrant: marked for deoptimization
+49   80       4       java.util.regex.Pattern$BmpCharPropertyGreedy::match (89 bytes)
+51   86     n 0       java.lang.invoke.MethodHandle::linkToStatic(LL)L (native)   (static)
+51   81       3       jdk.internal.util.ArraysSupport::unsignedHashCode (36 bytes)
+51   85       3       java.util.ImmutableCollections$SetN::probe (56 bytes)
+52   82       3       java.lang.Math::floorMod (20 bytes)
+52   83       3       jdk.internal.util.ArraysSupport::hashCodeOfUnsigned (55 bytes)
+52   84       3       jdk.internal.util.ArraysSupport::vectorizedHashCode (158 bytes)
+52   87       1       java.lang.invoke.MemberName::getDeclaringClass (5 bytes)
+52   88       3       java.lang.invoke.MethodType::hashCode (53 bytes)
+52   89       3       java.util.Objects::requireNonNull (15 bytes)
+53   90       3       java.lang.invoke.MemberName::isInvocable (8 bytes)
+53   91       3       java.lang.ref.Reference::reachabilityFence (1 bytes)
+53   92     n 0       jdk.internal.misc.Unsafe::getByte (native)   
+53   93       3       java.lang.StringLatin1::indexOfChar (33 bytes)
+53   94       4       java.lang.String::isLatin1 (19 bytes)
+53    9       3       java.lang.String::isLatin1 (19 bytes)   made not entrant: not used
+54   95       3       java.lang.String::isEmpty (14 bytes)
+54   96       3       java.nio.Buffer::session (20 bytes)
+54   97       3       java.nio.Buffer::checkIndex (12 bytes)
+54   98   !   3       java.nio.DirectByteBuffer::get (34 bytes)
+55   99       3       java.util.HashMap::newNode (13 bytes)
+55   79       4       java.lang.String::charAt (25 bytes)   made not entrant: uncommon trap
+56   94       4       java.lang.String::isLatin1 (19 bytes)   made not entrant: uncommon trap
+56  100       3       java.lang.StringUTF16::getChar (60 bytes)
+56  101       4       java.lang.StringUTF16::getChar (60 bytes)
+56  100       3       java.lang.StringUTF16::getChar (60 bytes)   made not entrant: not used
+ 0:    911,257  102       3       java.lang.String::isLatin1 (19 bytes)
+ ns/round
+window 65  103       4       java.lang.String::checkIndex (10 bytes)
+ 1:    417,2 ns/round
+74  104 %     3       Cliff::main @ 146 (219 bytes)
+window  2:    453,4 ns/round
+77  105       3       Cliff::main (219 bytes)
+78  107       1       java.nio.Buffer::limit (5 bytes)
+78  108       1       java.nio.Buffer::position (5 bytes)
+78  106       1       java.lang.AbstractStringBuilder::length (5 bytes)
+window  3:    438,3 ns/round
+window  4:    383,1 ns/round92  109       3       java.lang.StringLatin1::canEncode (17 bytes)
+
+92  110 %     4       Cliff::main @ 146 (219 bytes)
+104  104 %     3       Cliff::main @ 146 (219 bytes)   made not entrant: OSR invalidation of lower level
+window  5:    745,0 ns/round
+window  6115  111       3       java.nio.ByteBuffer::arrayOffset (35 bytes)
+:    399,4 ns/round
+123  112       4       java.lang.StringLatin1::charAt (15 bytes)
+124  113       3       java.lang.String::charAt (25 bytes)
+window  7: 124  114       3       java.lang.AbstractStringBuilder::isLatin1 (16 bytes)
+  124  115       3       java.nio.Buffer::position (52 bytes)
+ 409,1 ns/round
+-- 3 receiver types from here
+124  116       3       java.lang.String::getBytes (44 bytes)
+125  117       3       Cliff$Rect::<init> (15 bytes)
+125  118       3       Cliff$Tri::<init> (15 bytes)
+125  119 %     4       Cliff::main @ 72 (219 bytes)
+127  119 %     4       Cliff::main @ 72 (219 bytes)   made not entrant: uncommon trap
+127   15 %     4       Cliff::total @ 11 (43 bytes)   made not entrant: uncommon trap
+127   16       4       Cliff::total (43 bytes)   made not entrant: uncommon trap
+128  122 %     3       Cliff::total @ 11 (43 bytes)
+128  120       2       Cliff$Rect::area (10 bytes)
+129  121       2       Cliff$Tri::area (12 bytes)
+132  124       4       Cliff$Tri::area (12 bytes)
+132  121       2       Cliff$Tri::area (12 bytes)   made not entrant: not used
+133  125       4       Cliff$Rect::area (10 bytes)
+133  120       2       Cliff$Rect::area (10 bytes)   made not entrant: not used
+133  123       3       Cliff::total (43 bytes)
+133  126 %     4       Cliff::total @ 11 (43 bytes)
+134  122 %     3       Cliff::total @ 11 (43 bytes)   made not entrant: OSR invalidation of lower level
+134  127       4       Cliff::total (43 bytes)
+134  123       3       Cliff::total (43 bytes)   made not entrant: not used
+136  110 %     4       Cliff::main @ 146 (219 bytes)   made not entrant: uncommon trap
+138  128 %     3       Cliff::main @ 146 (219 bytes)
+window  8: 170  129       3       java.nio.CharBuffer::arrayOffset (35 bytes)
+  2149,6 ns/round
+window  9:  205  130       3       java.lang.StringLatin1::indexOf (17 bytes)
+ 1727,2 ns/round205  131       4       java.lang.String::toString (2 bytes)
+206   70       3       java.lang.String::toString (2 bytes)   made not entrant: not used
+
+218  132 %     4       Cliff::main @ 146 (219 bytes)
+227  128 %     3       Cliff::main @ 146 (219 bytes)   made not entrant: OSR invalidation of lower level
+window 10: 247  133       3       java.lang.AbstractStringBuilder::needsNewBuffer (33 bytes)
+  2059,2 ns/round
+window 11:   1792,5 ns/round
+window 12:   1800,9319  134       3       java.io.PrintStream::ensureOpen (18 bytes)
+ ns/round
+355  135       1       java.nio.Buffer::capacity (5 bytes)
+window 13355  136       3       java.nio.Buffer::remaining (20 bytes)
+: 355  137     n 0       java.lang.Float::floatToRawIntBits (native)   (static)
+ 355  138       3       java.io.BufferedWriter::ensureOpen (18 bytes)
+356  139       1       java.nio.charset.CharsetEncoder::maxBytesPerChar (5 bytes)
+356  140       3       java.nio.CharBuffer::position (6 bytes)
+356  141       3       java.nio.charset.CoderResult::isUnderflow (13 bytes)
+356  142       3       java.nio.ByteBuffer::array (35 bytes)
+356  143     n 0       java.io.FileOutputStream::writeBytes (native)   
+ 1775,5 ns/round
+window 14:   1811,9 ns/round
+392  144       3       java.lang.String::indexOf (41 bytes)
+window 15:   1795,2 ns/round
+76410679840000

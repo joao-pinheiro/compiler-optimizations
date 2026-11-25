@@ -1,0 +1,127 @@
+host: cpu: Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz  pinned: cpu 4 (sibling 12 left idle)
+date: 2026-11-23T11:25:32+01:00  kernel: 6.8.0-149-generic  governor: performance  load: 1.87 1.92 2.89
+per-cpu busy % before the run:
+0 1.2 1 1.2 2 1.8 3 1.2 4 1.0 5 1.8 6 1.2 7 2.4 8 2.4 9 1.2 10 2.2 11 2.4 12 1.0 13 2.2 14 1.6 15 1.6 
+load after: 1.42 1.50 2.39
+binaries built locally (gcc 15.2 / clang 21.1 -static; Go 1.27.4 go test -c), run pinned with taskset
+
+== gcc-O2
+result discarded:              0.000 ns/op
+result consumed, input hidden: 701.608 ns/op
+== clang-O2
+result discarded:              0.000 ns/op
+result consumed, input hidden: 704.406 ns/op
+== gcc-O0
+result discarded:              1589.128 ns/op
+result consumed, input hidden: 1600.825 ns/op
+== clang-O0
+result discarded:              1744.421 ns/op
+result consumed, input hidden: 1743.996 ns/op
+== gcc-O2
+result discarded:              0.000 ns/op
+result consumed, input hidden: 711.491 ns/op
+== clang-O2
+result discarded:              0.000 ns/op
+result consumed, input hidden: 710.457 ns/op
+== gcc-O0
+result discarded:              1601.260 ns/op
+result consumed, input hidden: 1607.060 ns/op
+== clang-O0
+result discarded:              1745.083 ns/op
+result consumed, input hidden: 1743.456 ns/op
+== gcc-O2
+result discarded:              0.000 ns/op
+result consumed, input hidden: 711.140 ns/op
+== clang-O2
+result discarded:              0.000 ns/op
+result consumed, input hidden: 709.280 ns/op
+== gcc-O0
+result discarded:              1608.461 ns/op
+result consumed, input hidden: 1596.136 ns/op
+== clang-O0
+result discarded:              1732.129 ns/op
+result consumed, input hidden: 1739.738 ns/op
+== gcc-O2
+result discarded:              0.000 ns/op
+result consumed, input hidden: 712.912 ns/op
+== clang-O2
+result discarded:              0.000 ns/op
+result consumed, input hidden: 708.951 ns/op
+== gcc-O0
+result discarded:              1605.555 ns/op
+result consumed, input hidden: 1595.586 ns/op
+== clang-O0
+result discarded:              1730.706 ns/op
+result consumed, input hidden: 1735.770 ns/op
+== gcc-O2
+result discarded:              0.000 ns/op
+result consumed, input hidden: 706.324 ns/op
+== clang-O2
+result discarded:              0.000 ns/op
+result consumed, input hidden: 707.900 ns/op
+== gcc-O0
+result discarded:              1600.580 ns/op
+result consumed, input hidden: 1599.185 ns/op
+== clang-O0
+result discarded:              1742.560 ns/op
+result consumed, input hidden: 1741.428 ns/op
+== gcc-O2
+result discarded:              0.000 ns/op
+result consumed, input hidden: 709.882 ns/op
+== clang-O2
+result discarded:              0.000 ns/op
+result consumed, input hidden: 708.913 ns/op
+== gcc-O0
+result discarded:              1607.221 ns/op
+result consumed, input hidden: 1603.719 ns/op
+== clang-O0
+result discarded:              1739.547 ns/op
+result consumed, input hidden: 1742.581 ns/op
+== gcc-O2
+result discarded:              0.000 ns/op
+result consumed, input hidden: 711.005 ns/op
+== clang-O2
+result discarded:              0.000 ns/op
+result consumed, input hidden: 709.286 ns/op
+== gcc-O0
+result discarded:              1594.424 ns/op
+result consumed, input hidden: 1596.123 ns/op
+== clang-O0
+result discarded:              1735.873 ns/op
+result consumed, input hidden: 1733.062 ns/op
+== gcc-O2
+result discarded:              0.000 ns/op
+result consumed, input hidden: 706.358 ns/op
+== clang-O2
+result discarded:              0.000 ns/op
+result consumed, input hidden: 707.707 ns/op
+== gcc-O0
+result discarded:              1595.370 ns/op
+result consumed, input hidden: 1593.619 ns/op
+== clang-O0
+result discarded:              1738.249 ns/op
+result consumed, input hidden: 1748.278 ns/op
+== gcc-O2
+result discarded:              0.000 ns/op
+result consumed, input hidden: 708.403 ns/op
+== clang-O2
+result discarded:              0.000 ns/op
+result consumed, input hidden: 707.194 ns/op
+== gcc-O0
+result discarded:              1600.226 ns/op
+result consumed, input hidden: 1591.454 ns/op
+== clang-O0
+result discarded:              1729.800 ns/op
+result consumed, input hidden: 1749.401 ns/op
+== gcc-O2
+result discarded:              0.000 ns/op
+result consumed, input hidden: 704.829 ns/op
+== clang-O2
+result discarded:              0.000 ns/op
+result consumed, input hidden: 706.799 ns/op
+== gcc-O0
+result discarded:              1593.956 ns/op
+result consumed, input hidden: 1589.735 ns/op
+== clang-O0
+result discarded:              1734.042 ns/op
+result consumed, input hidden: 1728.308 ns/op

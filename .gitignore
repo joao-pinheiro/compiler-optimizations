@@ -1,0 +1,5 @@
+*.o
+*.s
+*.so
+*.class
+java/jmh/target/

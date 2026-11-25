@@ -1,0 +1,18 @@
+window  0:    915,2 ns/round
+window  1:    401,5 ns/round
+window  2:    459,9 ns/round
+window  3:    408,3 ns/round
+window  4:    397,3 ns/round
+window  5:    747,0 ns/round
+window  6:    408,8 ns/round
+window  7:    404,0 ns/round
+-- 3 receiver types from here
+window  8:   2016,9 ns/round
+window  9:   1601,2 ns/round
+window 10:   1975,7 ns/round
+window 11:   1774,0 ns/round
+window 12:   1778,6 ns/round
+window 13:   1794,2 ns/round
+window 14:   1799,6 ns/round
+window 15:   1744,1 ns/round
+76410679840000

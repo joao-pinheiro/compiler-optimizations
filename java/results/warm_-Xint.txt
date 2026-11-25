@@ -1,0 +1,61 @@
+calls    1-  25:    13315 ns/call
+calls   26-  50:    12969 ns/call
+calls   51-  75:    13111 ns/call
+calls   76- 100:    12944 ns/call
+calls  101- 125:    12862 ns/call
+calls  126- 150:    13160 ns/call
+calls  151- 175:    13052 ns/call
+calls  176- 200:    12939 ns/call
+calls  201- 225:    12933 ns/call
+calls  226- 250:    16816 ns/call
+calls  251- 275:    12558 ns/call
+calls  276- 300:    12862 ns/call
+calls  301- 325:    12823 ns/call
+calls  326- 350:    12690 ns/call
+calls  351- 375:    12369 ns/call
+calls  376- 400:    12987 ns/call
+calls  401- 425:    12967 ns/call
+calls  426- 450:    13018 ns/call
+calls  451- 475:    14509 ns/call
+calls  476- 500:    12766 ns/call
+calls  501- 525:    12275 ns/call
+calls  526- 550:    12647 ns/call
+calls  551- 575:    12728 ns/call
+calls  576- 600:    13014 ns/call
+calls  601- 625:    12898 ns/call
+calls  626- 650:    12887 ns/call
+calls  651- 675:    12682 ns/call
+calls  676- 700:    12805 ns/call
+calls  701- 725:    12552 ns/call
+calls  726- 750:    12535 ns/call
+calls  751- 775:    13363 ns/call
+calls  776- 800:    12842 ns/call
+calls  801- 825:    12906 ns/call
+calls  826- 850:    12768 ns/call
+calls  851- 875:    12638 ns/call
+calls  876- 900:    12787 ns/call
+calls  901- 925:    12558 ns/call
+calls  926- 950:    12774 ns/call
+calls  951- 975:    12721 ns/call
+calls  976-1000:    12895 ns/call
+calls 1001-1025:    12825 ns/call
+calls 1026-1050:    12687 ns/call
+calls 1051-1075:    12929 ns/call
+calls 1076-1100:    13045 ns/call
+calls 1101-1125:    13766 ns/call
+calls 1126-1150:    14246 ns/call
+calls 1151-1175:    16359 ns/call
+calls 1176-1200:    15072 ns/call
+calls 1201-1225:    15244 ns/call
+calls 1226-1250:    12676 ns/call
+calls 1251-1275:    12808 ns/call
+calls 1276-1300:    13220 ns/call
+calls 1301-1325:    13076 ns/call
+calls 1326-1350:    13103 ns/call
+calls 1351-1375:    13958 ns/call
+calls 1376-1400:    14176 ns/call
+calls 1401-1425:    12772 ns/call
+calls 1426-1450:    12756 ns/call
+calls 1451-1475:    12659 ns/call
+calls 1476-1500:    13229 ns/call
+209665612
